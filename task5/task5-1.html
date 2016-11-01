@@ -5,14 +5,16 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
 	<!--[if lt IE 9]>
-　　　　<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+　　　　<script src="http://css3-mediaqueries-js.googlecode.com/svn/liunk/css3-mediaqueries.js"></script>
 　　<![endif]-->
 	<title>task5-1</title>
 	<style type="text/css">
 		@media screen and (max-width: 480px) {
 	    html {
-	        font-size: 65%;
+	        font-size: 60%;
 		}
+
+
 		}
 		body,h2,h3,h4,ul,ol,p {
 			margin: 0;
@@ -24,6 +26,7 @@
 			max-width: 720px;
 			margin: 0 auto;
 			font-family: "Microsoft YaHei",serif;
+			font-size: 16px;
 		}
 		img{
 			max-width: 100%;
@@ -34,7 +37,7 @@
 		}
 
 		.header{
-
+			position: relative;
 			width: 100%;
 			line-height: 4rem;
 			background-color:#5fc0cd;			
@@ -51,119 +54,132 @@
 
 		} 
 
-		.header a img {
-			float: left;
-			margin: 1rem;
+		.header a {
+			position: absolute;
+			left:3%;
+			padding: 1rem;
 
 			
 		}
 	
 		.main{
 			width: 100%;
-			height: 16rem;
-			padding: 5% 0; 
-			background:  url(images/main_bg.png) ;
+			
+			padding: 5% 0;
+			background: url("images/main_bg.png");
 			-webkit-background-size: cover;
 			-moz-background-size: cover;
 			-o-background-size: cover;
-			 background-size: cover;
+			background-size: cover;
+			overflow: hidden;
 
 		}
 
-		.main_photo{
+		.main .main_photo{
 			float: left;
-			width: 10.625rem;
-			height: 10.625rem;
-			margin: 2.75rem 1.875rem;
+			width: 22%;
+			padding: 11% 0;
+			margin: 3% 4%;
 			border-radius:50%;
 			overflow: hidden;
-			background: white url(images/photo.png) 0 0 no-repeat;
-
+			background:url(images/photo.png);
+			background-size: cover;
 		}
 
-		.main_intro{
-			width: 60%;
-			margin: 2.75rem  0 .625rem;
+		.main .main_intro{
+			width: 65%;
+			margin: 3% 1%;
 
 			float:left;
 			color: white;
 
 		}
 
-		.main_name{
-			margin-top: 1.75rem;
-			margin-bottom: 1rem;
+		.main .main_name{
+			margin-top: 2%;
+			margin-bottom: 1%;
 			font-size: 2.25rem;
 
 		}
-		.main_age{
+		.main .main_age{
 			font-size: 1.75rem;
-			margin-left: 1.75rem;
+			margin-left: 3%;
 
 		}
 
-		.main_location{			
+		.main .main_location{			
 			font-size: 1.5rem;
-			margin-left: 1rem;
+			margin-left: 2%;
 
 
 		}
 /*人物职业信息*/		
 		.introduce{
 			width: 100%;
-			height: 37.5rem;
+			float: left;
 			font-size: 2rem;
-
-
 		}
-		table{
-
+		.skill{
+			width: 100%;
+			
+			
+			border-bottom: 1px solid #e1e5e7;
 			
 		}
-		
-		.skill {
+
+		.skill p{
+			margin: 2.2rem 0;
+			margin-left: 6%;
+			padding-left: 4%;
 			border-left: 5px solid #5ac0ce;
-			margin-left: 2rem;
+			font-weight: 500;
 		}
-			
-			{	argin-right: 10px;
-		}
-		
-		tr{
-			height: 6.25rem;
 
-			vertical-align: center;
+		ul{
+			margin-left: 4%;
+		}
+		li img{
+			margin-right: 2%;
+		}
+		li{
+			padding:3% 0;
 			border-bottom: 1px solid #e1e5e7;
 		}
+	
+		li span {
+			padding:0 3%;	
+		}
 
-		th{	
-			width: 13.5rem;
+		.introduce .star{
+			border-right: 1px solid #e1e5e7;	
+		}
+
+		.introduce .list {
+			margin-left: 2%;
+			border-right: 1px solid #e1e5e7;
 			color: #999999;
-
-			border-right:1px solid #e1e5e7;
-			font-weight: normal;
+			width: 30%;
 		}
 
-		td{	
-			padding-left: 1rem;
-		}
-
-		.red{
+		.introduce .red{
 			color: red;
 		}
 
-		.intro{
+		.introduce .intro{
 			
+			display: inline-block;
+			vertical-align: middle;
 			font-size: 1.75rem;
+			width: 60%;
 		
 		}
 /*底部按钮*/
 		.footer{
-			margin:1.5rem;
+			margin:2% 3%;
 		}
 
 		.footer button {
-			width: 19.375rem;
+			width: 43%;
 			height: 5.625rem;
 			margin:0.5rem;
 			border-radius: 0.625rem;
@@ -202,26 +218,27 @@
 		</div>
 		
 	</div>
+	
 	<div class=introduce>
-		<div class="skill">专业技能</div>
-		<table>
-			<tr>
-			<td><img src="images/star.png">住家</td><td><img src="images/star.png">不含餐</td>		
-			</tr>		
-			<tr>
-			<th>从业年限</th><td>0~3年</td>		
-			</tr>		
-			<tr>
-			<th>工作时间</th><td>全天</td>		
-			</tr>		
-			<tr>
-			<th>服务价格</th><td class="red">25元/小时</td>		
-			</tr>		
-			<tr>
-			<th>自我介绍</th><td class="intro">可以洗衣、做饭、照顾老人。在护工方面有五年工作经验，经验丰富</td>		
-			</tr>
-		</table>
-
+		<div class="skill"><p>专业技能</p></div>
+		<ul>
+			<li>
+				<span class="star"><img src="images/star.png">住家</span><span><img src="images/star.png">不含餐</span>		
+			</li>		
+			<li>
+				<span class="list">从业年限</span><span>0~3年</span>		
+			</li>		
+			<li>
+				<span class="list">工作时间</span><span>全天</span>		
+			</li>		
+			<li>
+				<span class="list">服务价格</span><span class="red">25元/小时</span>		
+			</li>		
+			<li>
+				<span class="list">自我介绍</span><span class="intro">可以洗衣、做饭、照顾老人。在护工方面有5年的经验，经验丰富。</span>		
+			</li>
+		</ul>
+	</div>
 	<div class="footer">
 		<button class="messagge" type="submit">留言</button>
 		<button class="contact" type="submit">电话联系</button>
