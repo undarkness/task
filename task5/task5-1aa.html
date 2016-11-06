@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+	<!--[if lt IE 9]>
+　　　　<script src="http://css3-mediaqueries-js.googlecode.com/svn/liunk/css3-mediaqueries.js"></script>
+　　<![endif]-->
+	<title>task5-1</title>
+	<style type="text/css">
+		@media screen and (max-width: 540px) {
+	    html {
+	        font-size: 60%;
+		}
+
+
+		}
+		body,h2,h3,h4,ul,ol,p {
+			margin: 0;
+			padding: 0;
+		}
+
+		body{
+			min-width: 320px;
+			max-width: 720px;
+			margin: 0 auto;
+			font-family: "Microsoft YaHei",serif;
+			font-size: 16px;
+		}
+		img{
+			max-width: 100%;
+
+		}
+		ul{
+			list-style: none;
+		}
+
+		.header{
+
+			width: 100%;
+			line-height: 4rem;
+			background-color:#5fc0cd;			
+			color: white;
+			text-align:center;
+			
+		}
+
+		.header h2{
+			
+			display: inline-block;
+			font-size: 2.25rem;
+			font-weight: normal;
+
+		} 
+
+		.header a img {
+			float: left;
+			margin: 1rem;
+
+			
+		}
+	
+		.main{
+			width: 100%;
+			height: 16rem;
+			padding: 5% 0; 
+			background:  url(images/main_bg.png) ;
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			 background-size: cover;
+
+		}
+
+		.main_photo{
+			float: left;
+			width: 10.625rem;
+			height: 10.625rem;
+			margin: 2.75rem 1.875rem;
+			border-radius:50%;
+			overflow: hidden;
+			background: white url(images/photo.png) 0 0 no-repeat;
+
+		}
+
+		.main_inlio{
+			width: 60%;
+			margin: 2.75rem  0 .625rem;
+
+			float:left;
+			color: white;
+
+		}
+
+		.main_name{
+			margin-top: 1.75rem;
+			margin-bottom: 1rem;
+			font-size: 2.25rem;
+
+		}
+		.main_age{
+			font-size: 1.75rem;
+			margin-left: 1.75rem;
+
+		}
+
+		.main_location{			
+			font-size: 1.5rem;
+			margin-left: 1rem;
+
+
+		}
+/*人物职业信息*/		
+		.introduce{
+			width: 100%;
+			
+			font-size: 2rem;
+		}
+		.skill{
+			width: 100%;
+			
+			
+			border-bottom: 1px solid #e1e5e7;
+			
+		}
+
+		.skill p{
+			margin: 2.2rem 0;
+			margin-left: 1.75rem;
+			padding-left: 2rem;
+			border-left: 5px solid #5ac0ce;
+			font-weight: 500;
+		}
+
+		ul{
+			margin-left: 2rem;
+		}
+		li img{
+			margin-right: 1rem;
+		}
+		li{
+			padding:2.2rem 0;
+			border-bottom: 1px solid #e1e5e7;
+		}
+	
+		li span {
+			padding:0 1rem;	
+		}
+
+		.introduce .star{
+		border-right: 1px solid #e1e5e7;	
+		}
+
+		.introduce .list {
+			margin-left: 1rem;
+			border-right: 1px solid #e1e5e7;
+			color: #999999;
+			width: 13.5rem;
+		}
+
+		.introduce .red{
+			color: red;
+		}
+
+		.introduce .intro{
+			
+			display: inline-block;
+			vertical-align: middle;
+			font-size: 1.75rem;
+			width: 27rem;
+		
+		}
+/*底部按钮*/
+		.footer{
+			margin:1.5rem;
+		}
+
+		.footer button {
+			width: 19.375rem;
+			height: 5.625rem;
+			margin:0.5rem;
+			border-radius: 0.625rem;
+			border: 1px solid #5ac0ce;
+			font-size: 2.125rem;
+			overflow: hidden;
+
+		}
+		.messagge {
+			color: #5ac0ce;
+			background-color: white;
+		}
+		.contact{
+			color: white;
+			background-color: #5ac0ce;			
+		}
+
+	</style>
+</head>
+<body>
+	<div class=header>	
+		<a href="/task5-2.html"><img src="images/back.png"></a>
+		<h2>个人主页</h2>
+		
+	</div>
+
+	<div class=main>
+		<div class="main_photo">
+			
+		</div>
+		<div class="main_inlio">
+			<p class="main_name">高素雅<span class="main_age">51岁</span>
+
+			</p>
+			<p ><img src="images/location.png"><span class="main_location">北京.通州.果园</span></p> 
+		</div>
+		
+	</div>
+	
+	<div class=introduce>
+		<div class="skill"><p>专业技能</p></div>
+		<ul>
+			<li>
+				<span class="star"><img src="images/star.png">住家</span><span><img src="images/star.png">不含餐</span>		
+			</li>		
+			<li>
+				<span class="list">从业年限</span><span>0~3年</span>		
+			</li>		
+			<li>
+				<span class="list">工作时间</span><span>全天</span>		
+			</li>		
+			<li>
+				<span class="list">服务价格</span><span class="red">25元/小时</span>		
+			</li>		
+			<li>
+				<span class="list">自我介绍</span><span class="intro">可以洗衣、做饭、照顾老人。在护工方面有5年的经验，经验丰富。</span>		
+			</li>
+		</ul>
+	</div>
+	<div class="footer">
+		<button class="messagge" type="submit">留言</button>
+		<button class="contact" type="submit">电话联系</button>
+	</div>
+
+</body>
+</html>

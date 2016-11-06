@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1" />
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+	<!--[if lt IE 9]>
+　　　　<script src="http://css3-mediaqueries-js.googlecode.com/svn/liunk/css3-mediaqueries.js"></script>
+　　<![endif]-->
+	<title>task5-2</title>
+	<style type="text/css">
+		@media screen and (max-width: 480px) {
+	    html {
+	        font-size: 62.5%;
+		}
+
+
+		}
+		body,h2,h3,h4,ul,ol,p,.filtrate {
+			margin: 0;
+			padding: 0;
+		}
+
+		body {
+			min-width: 320px;
+			max-width: 720px;
+			width: 100%;
+			margin: 0 auto;
+			font-family: "Microsoft YaHei",serif;
+			font-size: 16px;
+			position: relative;
+
+		}
+		img{
+			max-width: 100%;
+
+		}
+		ul{
+			list-style: none;
+		}
+/*顶端内容*/
+		.header{
+			
+			width: 100%;
+			padding: 1% 0;
+			background-color:#5fc0cd;			
+			color: white;
+			text-align:center;	
+			vertical-align: middle;
+			overflow: hidden;
+		}
+
+		.header button{
+			border: none;
+			padding: 0 1.25rem;
+			font-size:2.125rem;
+			line-height: 1.5;
+			border-radius: 0.625rem;
+		}
+		button.employer{
+			background-color:#55a8b3;
+			color: white;
+		}
+		button.carers{
+			background-color:white;
+			color: #5fc0cd;
+			margin-left: -1.25rem;
+
+		}
+		.header .location{
+
+			float: right;
+			width: 8%;
+			margin-right: 2.7%;
+		}
+
+/*页面内容*/
+		.main  {
+			
+			color: #e1e5e7;
+			width: 100%;
+		}
+
+		.filtrate { 
+
+			float: left;
+			width: 100%;
+			border-bottom: 1px solid #e1e5e7; 
+
+		}
+
+		.filtrate li {
+			
+			padding: 3% 0;
+			float: left;
+			box-sizing: border-box;
+			width: 33.33%;
+			font-size:1.75rem; 
+			color: #999999;
+			border-right: 1px solid #e1e5e7; 
+			text-align: center;
+
+		}
+		li span.line{
+
+		}
+		li span.triangle-down{
+			float: right;
+			display: inline-block;
+			width: 0;
+			height: 0;
+			margin: 4% 6% 0 0;
+			vertical-align: middle;
+			color: white;
+			text-align: center;
+			border-top: 0.625rem solid #afbac0;
+			border-left: 0.625rem solid transparent;
+			border-right: 0.625rem solid transparent;
+		}
+		.filtrate li.patient{
+			border: none;
+		}
+		
+		.content{
+			width: 100%;
+			font-size: 1.75rem;
+			color: #999999;
+			float: left;
+		}
+		.content li{
+			width: 100%;
+			padding: 3% 0;
+
+			border-bottom: 1px solid #e1e5e7;
+			vertical-align: middle;
+		}
+		.content img{
+			margin-left: 3%;
+		}
+		.content .date{	
+			vertical-align: middle;
+		}
+
+		.content .detail{
+			padding: 1% 0 1% 8%;
+			overflow: hidden;
+			vertical-align: middle;
+		}
+		.content .detail .period{
+			width: 60%;
+			color: #333;
+			float: left;
+		}
+
+		.content .detail .price{
+			font-size: 1.875rem;
+			width: 30%;
+			color: red;
+			float: left;
+			text-align: right;
+		}
+		.detail img{
+			float: right;
+		}
+
+		.content .detail .location{
+
+		}
+/*底部内容*/
+		nav{
+			width: 100%;
+			bottom: 0 ;
+			padding: 0 24%;
+			max-width: 720px;
+			position: fixed;
+			background: #f8fafb;
+   			border-top: 1px solid #e1e5e7;
+   			float: left;
+   		}	
+
+
+		.left,.right{
+			float: left;
+			width: 8.5%;
+			padding:0.625rem ;
+			text-align: center;
+			overflow: hidden;
+		}
+		.center{
+			float: left;
+			width: 12%;
+			margin: 0 13.6%;
+		}
+		nav span{
+			display: block;
+			vertical-align: middle;
+			text-align: center;
+			font-size: 1.25rem;
+			color: #999;
+		}
+	</style>
+</head>
+<body>
+	<div class="header">
+		<button class="employer">找雇主</button>
+		<button class="carers">找护工</button>
+		<span class="location"><img src="images/header-location.png"></span>
+	</div>
+	<div class="main">
+	
+		<ul class="filtrate">
+			<li>
+				所在地<span class="triangle-down"></span>
+			</li>
+			<li>
+				食宿<span class="triangle-down"></span>
+			</li>
+			<li class="patient">
+				病人情况<span class="triangle-down"></span>
+			</li>
+		</ul>
+		
+		<ul class="content">
+			<li>
+				<div class="date">
+					<img src="images/ico_date.png"> 服务日期
+				</div>
+				<div class="detail"> 
+					<span class="period">2015-7-5至2015-7-12</span>
+					<span class="price">25元/小时</span>
+					<a href="task5-1.html"><img src="images/next.png"></a>
+				</div>
+				<div class="location">
+					<img src="images/ico_location.png">北京.通州.果园
+				</div>
+			</li>
+			<li>
+				<div class="date">
+					<img src="images/ico_date.png"> 服务日期
+				</div>
+				<div class="detail"> 
+					<span class="period">2015-7-5至2015-7-12</span>
+					<span class="price">35元/小时</span>
+					<a href="task5-1.html"><img src="images/next.png"></a>
+				</div>
+				<div class="location">
+					<img src="images/ico_location.png">北京.通州.果园
+				</div>
+			</li>
+			<li>
+				<div class="date">
+					<img src="images/ico_date.png"> 服务日期
+				</div>
+				<div class="detail"> 
+					<span class="period">2015-7-5至2015-7-12</span>
+					<span class="price">45元/小时</span>
+					<a href="task5-1.html"><img src="images/next.png"></a>
+				</div>
+				<div class="location">
+					<img src="images/ico_location.png">北京.通州.果园
+				</div>
+			</li>
+			<li>
+				<div class="date">
+					<img src="images/ico_date.png"> 服务日期
+				</div>
+				<div class="detail"> 
+					<span class="period">2015-7-5至2015-7-12</span>
+					<span class="price">45元/小时</span>
+					<a href="task5-1.html"><img src="images/next.png"></a>
+				</div>
+				<div class="location">
+					<img src="images/ico_location.png">北京.通州.果园
+				</div>
+			</li>
+			<li>
+				<div class="date">
+					<img src="images/ico_date.png"> 服务日期
+				</div>
+				<div class="detail"> 
+					<span class="period">2015-7-5至2015-7-12</span>
+					<span class="price">45元/小时</span>
+					<a href="task5-1.html"><img src="images/next.png"></a>
+				</div>
+				<div class="location">
+					<img src="images/ico_location.png">北京.通州.果园
+				</div>
+			</li>	
+			<li>
+				<div class="date">
+					<img src="images/ico_date.png"> 服务日期
+				</div>
+				<div class="detail"> 
+					<span class="period">2015-7-5至2015-7-12</span>
+					<span class="price">45元/小时</span>
+					<a href="task5-1.html"><img src="images/next.png"></a>
+				</div>
+				<div class="location">
+					<img src="images/ico_location.png">北京.通州.果园
+				</div>
+			</li>							
+		</ul>
+	</div>
+	<nav>
+		<ul>
+			<li class="left">
+				<img src="images/homepage.png"><span>首页</span>
+			</li>
+			<li class="center">
+				<img src="images/mark.png">
+			</li>
+			<li class="right">
+				<img src="images/own.png"><span>我的</span>
+			</li>
+		</ul>
+	</nav>
+	
+</body>
+</html>
