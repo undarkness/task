@@ -1,0 +1,101 @@
+.header{
+	width: 100%;
+	background: #29bde0;
+}
+.header-set{
+	padding:3.4%;
+}
+.main{
+	background: #f0f0f0;
+	padding: 4.5%; 
+
+}
+.main_top{
+	font-size: 2.1775rem;
+	line-height: 7.5rem;
+    color: #9a9a9a;
+    text-align: center;
+    background: white;
+    border: 1px #c9c9c9 solid;
+	vertical-align: middle;
+}
+.main_top .goto{
+	
+	width: 4.7%;
+	float: right;
+	padding-right: 2.25%;
+	
+}
+.main_content{
+	background: #f0f0f0;
+	margin-top: 4.5%; 
+	text-align: center;
+    background: white;
+    border: 1px #c9c9c9 solid;
+	position: relative;
+}
+
+.main_content .name{
+	font-size: 2.35875rem;
+	color: #fdd435;
+	border-bottom: 1px solid #fdd793;
+	line-height: 2.7;
+	text-align: center;
+	font-weight: normal;
+}
+
+.main_content .level{
+	margin-top: 4.7%;
+}
+
+.level li{
+	margin-top: 4%;
+}
+.level button {
+	width:80%;
+
+	font-size: 2.005rem;
+	line-height: 4.2;
+	color: white;
+	background: #69d1e9;
+	
+	
+}
+.level p{
+	margin-top: 4%;
+	font-size: 1.533125rem;
+	color: #808080;
+}
+.more{
+	margin:2% auto;
+	width: 7rem;
+	height: 1rem;
+	box-sizing: border-box;
+}
+/*圆形*/
+.circle{
+	float: left;
+	width: 1rem;
+	height: 1rem;
+	margin-left:0.625rem;
+	background: #f0f0f0;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+}
+
+
+.circle:hover, .current{
+	background: #69d1e9;
+}
+/*右三角*/
+.triangle-right{
+	position: absolute;
+	top: 50%;
+	right: 1%;
+	width: 0;
+	height: 0;
+	border-top: 2rem solid transparent;
+	border-bottom: 2rem solid transparent;
+	border-left: 2rem solid #fbb435;
+}

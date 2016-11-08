@@ -1,0 +1,23 @@
+body,h2,h3,h4,ul,ol,p {
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	min-width: 320px;
+	max-width: 640px;
+	margin: 0 auto;
+	font-family: "Microsoft YaHei",serif;
+	font-size: 16px;
+}
+img{
+	max-width: 100%;
+}
+ul{
+	list-style: none;
+}
+@media screen and (max-width: 480px) {
+    html {
+        font-size: 62.5%;
+    }
+}
