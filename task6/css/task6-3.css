@@ -1,0 +1,110 @@
+.header{
+	
+	padding: 3%;
+	
+	border-bottom: 1px solid #74d4eb;
+	background: #29bde0;
+	text-align: center;
+	
+	vertical-align: middle;
+	overflow: hidden;
+}
+.header h2 {
+	display: inline;
+	font-size: 2.125rem;
+	font-weight: normal;
+	color: white;
+
+}
+.header-left {
+	width: 8%;
+	float: left;
+}
+.header-right{
+	width: 8%;
+	float: right;
+}
+.main{
+
+}
+
+.main-top {
+	border-bottom: 1px solid #74d4eb;
+	background: #29bde0;
+	text-align: center;
+}
+.main-top img{
+	width: 56%;
+	margin:3.75% auto;
+}
+.main-top p{
+	width: 75%;
+	margin: 3.75% auto;
+	text-align: left;
+}
+.main-top pre{
+	white-space: pre-wrap;       
+	white-space: -moz-pre-wrap;  
+	white-space: -pre-wrap;      
+	white-space: -o-pre-wrap; 
+	width: 75%;
+	margin: 3.75% auto;
+	text-align: left;
+}
+   
+
+.main-top .congrats{
+	font-size: 2.0625rem;
+	color:#ffc865;
+}
+.main-top .result{
+	margin-top: 10%;
+	font-size: 1.625rem;
+	color: white;
+}
+.main-middle li{
+	padding: 0.625rem 12%;
+	border-bottom: 1px solid  #c7c7c7;
+}
+.date{
+	font-size: 1.875rem;
+	color: #333;
+}
+.time{
+	margin-left: 44%;
+	font-size: 1.25rem;
+	color: #c7c7c7;
+}
+.detail{
+	margin: 4% 0;
+	
+	font-size: 1.625rem;
+	color: #c7c7c7;
+}
+
+
+
+.footer{
+	width: 100%;
+	max-width: 640px;
+	position: fixed;
+	bottom: 0;
+	background: rgba(153,233,240,0.48);
+	overflow: hidden;
+}
+.footer button{
+	width: 42%;
+	margin:3%;
+	font-size: 2.5rem;
+	color: white;
+	border-radius: 0.625rem;
+	line-height: 5.5rem;
+	text-align: center;
+	float: left;
+}
+.footer button.left {
+	background: #f66f6f;
+}
+.footer button.right {
+	background: #fbb435;
+}
